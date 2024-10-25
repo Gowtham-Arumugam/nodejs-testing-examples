@@ -1,0 +1,14 @@
+name: Test & Deploy
+on: [workflow_dispatch,push]
+jobs:
+    Testing:
+        runs-on: ubuntu-latest
+        steps:
+          - name: Checkout
+            uses: actions/checkout@v4
+          - name: what is the version
+            run: node --version
+          - name: npm install
+            run: npm install
+          - name: basic testing
+            run: npm run basic-test
