@@ -12,3 +12,7 @@ jobs:
             run: npm install
           - name: basic testing
             run: npm run basic-test
+          - name: npm run mocha-test
+            run: npm run mocha-test
+          - name: npm run express-test
+            run: npm run express-test
